@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bid Language Reference Tool</title>
+    <link href="https://fonts.cdnfonts.com/css/game-changer" rel="stylesheet"> <!-- Link to the Game Changer font -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="company-logo.png" alt="Company Logo" class="logo">
+        <h1>BID LANGUAGE REFERENCE TOOL</h1>
+        <p>Find the language you need for every bid.</p>
+    </header>
+    <!-- Other sections remain the same -->
+
+    <!-- Search and Filter Section -->
+    <section class="search-section">
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search here">
+        </div>
+        <div class="filters">
+            <label>Category:</label>
+            <select id="category-filter">
+                <option value="">All</option>
+                <option value="Housing & Communities">Housing & Communities</option>
+                <option value="Public Engagement">Public Engagement</option>
+                <option value="Evidence & Planning">Evidence & Planning</option>
+                <option value="Heritage & Culture">Heritage & Culture</option>
+                <option value="Social Justice">Social Justice</option>
+                <option value="Urban Design">Urban Design</option>
+                <option value="Regeneration">Regeneration</option>
+                <option value="Sustainability">Sustainability</option>
+                <option value="Local Governance">Local Governance</option>
+                <option value="Environmental Policy">Environmental Policy</option>
+                <option value="Urban Development">Urban Development</option>
+                <option value="Governance & Collaboration">Governance & Collaboration</option>
+                <option value="Community Empowerment">Community Empowerment</option>
+            </select>
+
+            <label>Source:</label>
+            <select id="source-filter">
+                <option value="">All</option>
+                <option value="Homes England Strategic Plan (2023-28)">Homes England Strategic Plan (2023-28)</option>
+                <option value="Historic England Places Strategy (2018)">Historic England Places Strategy (2018)</option>
+                <option value="TCPA Tomorrow 125 (March 24)">TCPA Tomorrow 125 (March 24)</option>
+                <option value="UN SDG Report (2024)">UN SDG Report (2024)</option>
+            </select>
+
+            <label>Tags:</label>
+            <select id="tags-filter" multiple>
+                <option value="Housing">Housing</option>
+                <option value="Communities">Communities</option>
+                <option value="Public Awareness">Public Awareness</option>
+                <option value="Communication">Communication</option>
+                <option value="Data">Data</option>
+                <option value="Evidence">Evidence</option>
+                <option value="Heritage">Heritage</option>
+                <option value="Preservation">Preservation</option>
+                <option value="Social Equality">Social Equality</option>
+                <option value="Justice">Justice</option>
+                <option value="Urban Design">Urban Design</option>
+                <option value="Mobility">Mobility</option>
+                <option value="Sustainability">Sustainability</option>
+                <option value="Governance">Governance</option>
+                <option value="Policy">Policy</option>
+                <option value="Climate">Climate</option>
+                <option value="Environmental Resilience">Environmental Resilience</option>
+                <option value="Affordable Housing">Affordable Housing</option>
+                <option value="Infrastructure">Infrastructure</option>
+                <option value="Resilience">Resilience</option>
+                <option value="Urban Regeneration">Urban Regeneration</option>
+                <option value="Integration">Integration</option>
+                <option value="Carbon Emissions">Carbon Emissions</option>
+                <option value="Brownfield">Brownfield</option>
+                <option value="Collaboration">Collaboration</option>
+                <option value="Empowerment">Empowerment</option>
+                <option value="Inclusive Design">Inclusive Design</option>
+                <option value="Planning">Planning</option>
+            </select>
+
+            <button id="clear-filters">Reset</button>
+        </div>
+    </section>
+
+    <!-- Search Results Section -->
+    <section id="results" class="results-grid">
+        <!-- Cards will be dynamically generated here -->
+    </section>
+
+    <!-- Modal for Detailed View -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">×</span>
+            <h2 id="modal-title">Phrase:</h2> <!-- Updated for clarity -->
+            <p id="modal-description">Full phrase description and details.</p>
+            <p><strong>Category:</strong> <span id="modal-category"></span></p>
+            <p><strong>Tags:</strong> <span id="modal-tags"></span></p>
+            <p><strong>Source:</strong> <span id="modal-source"></span></p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Related Resources | User Guide | Support</p>
+        <button>Feedback</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
